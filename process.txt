@@ -22,6 +22,7 @@ ps -ef | more : 查看父进程
 终止进程：kill [选项] 进程号
     -9：强迫立刻停止
 killall 进程名称
+ps -aux|grep "train"|awk '{print $2}'|xargs kill -9: 杀死指定进程（一般用于多进程批量杀死）
 
 pstree: 进程树
     -p: 显示PID
