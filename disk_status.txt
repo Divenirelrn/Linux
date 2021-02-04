@@ -1,0 +1,21 @@
+查询整体情况:
+    df -h
+    df -lh
+
+查询指定目录：
+    du -h /目录
+        -s: 目录大小大小汇总
+        -h: 带单位
+        -a: 含文件
+        --max-depth=n 子目录深度
+        -c: 列出明细，且增加汇总值
+
+统计文件/目录：
+    ls -l /home | grep "^-" | wc -l
+    ls -l /home | grep "^d" | wc -l
+    ls -lR /home | grep "^-" | wc -l
+    ls -lR /home | grep "^d" | wc -l
+
+以树状结构显示:
+    tree
+

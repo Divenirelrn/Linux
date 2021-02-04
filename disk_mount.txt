@@ -1,0 +1,23 @@
+mbr分区（传统）：最多4个主分区
+gtp分区（目前）
+
+win: 主分区、扩展分区、逻辑分区
+linux: 一块磁盘的每个分区挂载到某个目录
+
+IDE硬盘（针状）：hd[abcd][1234]
+scsi硬盘（目前）：sd[abcd][1234]
+
+lsblk [-f]: 查询分区情况
+
+挂载硬盘;
+    分区：fdisk /dev/sdb -> n -> P -> 1 -> w
+    格式化：mkfs -t ext4 /dev/sdb/
+    挂载：mount /dev/sdb1 /home/newdisk
+    设置自动挂载（重启后自动挂载）;
+        vim /etc/fstab
+        /dev/sdb1 /home/newdisk ext4 defaults 0 0
+        mount -a
+
+卸载硬盘：
+    unmount /dev/sdb1
+    unmount /home/newdisk

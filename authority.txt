@@ -36,5 +36,5 @@ ok.txt: 文件名
     r=4,w=2,x=1,4+2+1=7
     chmod u=rwx,g=rx,o=x 文件/目录名
     <=> chmod 751 文件/目录名
-    
+
 

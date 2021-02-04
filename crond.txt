@@ -1,0 +1,20 @@
+
+crond任务调度：定时任务调度
+
+crontab
+    -e: 编辑crontab定时任务
+    -l:查询crontab任务
+    -r:删除当前用户所有的crontab任务
+
+编辑：
+    cronab -e
+        */1**** ls -l /etc >> /tmp/to.txt(每隔1分钟执行ls -l /etc >> /tmp/to.txt)
+
+     *：任何时间
+     ,: 不连续时间，如：0 8,12,16 ***: 每天的8点、12点、16点执行一次指令
+     -: 连续时间，如：0 5 * * 1-6: 周一到周六的5点执行一次
+     */n: 每隔多久，如：*、10 ****：每隔10分钟执行一次
+
+crontab -r:终止
+crontab -l: 显示
+service crond restart:重启任务调度
