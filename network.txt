@@ -1,1 +1,6 @@
 
+服务器配置固定IP地址;
+    /etc/sysconfig/network-scripts/ifcfg-eth0:
+        onBoot = yes
+        BOOTPROTO = static
+        IPADDR: 192.168.184.130
