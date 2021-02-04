@@ -1,0 +1,8 @@
+
+Ubuntu默认未安装sshd
+
+sudo apt-get install openssh-server
+service sshd restart
+
+ssh 服务器用户名@服务器ip
+退出： exit/logout
