@@ -1,0 +1,17 @@
+RPM（Redhat Package Maneger）包管理
+
+rpm
+    -qa | grep **
+    -qi 软件包名：查询版本（详细信息）
+    -ql 软件包名：查询软件包中的文件
+    -qf 文件路径：查询文件所属软件包
+
+rpm -e: 删除软件包
+    *--nodeps: 强制删除
+
+rpm -ivh 包名：安装软件包
+    -i: install
+    -v: verbose（详细信息）提示
+    -h: hash进度条
+
+    
