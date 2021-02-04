@@ -1,0 +1,44 @@
+
+service 服务名 start/stop/restart/reload/status
+
+centos7.0后：service -> systemctl
+
+service iptables restart: 防火墙重启
+
+查看端口是否通：telnet 192.168.1.1 22
+
+service重启后会回到原始状态 -> chkconfig
+
+查看服务名：/etc/init.d
+
+查看服务运行级别：
+    vi /etc/inittab
+
+开机流程：
+    开机 -> BIOS -> /boot -> init进程 -> 运行级别 -> 运行级别对应服务
+
+chkconfig: 用于检查、设置系统的各项服务
+    chkconfig --list | grep ***
+    chkconfig 服务名 --list
+    chkconfig --level 5 服务名 on/off（设置服务在某个运行级别下自启动）
+
+监控服务：
+    top
+        -d: 每隔几秒更新
+        -i: 不显示任何闲置或僵死进程
+        -p: 监控指定进程
+
+    top
+        -> u: 监控特定用户
+        -> k: 杀死指定进程
+        -> P: 按cpu排序
+        -> M: 按内存排序
+        -> N: 按首字母排序
+
+    *q:退出
+
+监控网络状态：
+    netstat
+        -an: 按一定顺序输出
+        -p:显示哪个进程在调用
+    *netstat -anp
