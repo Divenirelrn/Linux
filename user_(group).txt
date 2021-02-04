@@ -1,0 +1,36 @@
+linux用户至少属于一个组
+
+添加用户：
+    useradd [参数] 用户名
+        -d 指定目录
+    *创建用户的同时会创建一个与用户名同名的组
+
+创建密码：
+    passwd 用户名
+
+删除用户：
+    userdel 用户名 #保留家目录
+    userdel -r 用户名 #删除家目录
+    *删除用户时，一般不会删除其家目录
+
+查询用户：
+    id 用户名
+    *uid: 用户id
+     gid: 组id
+
+切换用户：
+    su 切换用户名
+    exit: 回退到原用户
+    whoami/who am i: 查询当前用户
+
+用户组管理：
+    groupadd 组名: 新增组
+    groupdel 组名：删除组
+    useradd -g 用户组 用户名: 创建用户时指定组
+    usermod -g 用户组 用户名: 修改组
+
+用户与组的相关配置文件：
+    /etc/passwd: 用户配置文件
+    /etc/shadow: 口令配置文件
+    /etc/group: 组配置文件
+

@@ -1,0 +1,13 @@
+
+shutdown:
+    shutdown -h now: 立即关机
+    shutdown -h 1: 1分钟后关机
+    shutdown -r now； 立即重启
+
+halt: 关机
+
+reboot: 重启
+
+sync: 把内存中的数据同步到磁盘（一般关机与重启前都会执行该指令）
+
+logout: 注销用户

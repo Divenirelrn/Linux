@@ -1,0 +1,9 @@
+linux发行版：
+    ubuntu, redhat, centos, debian, fedora, suse...
+
+应用：
+    嵌入式领域：机顶盒、数字电视、手机、智能家居、物联网
+
+GNU计划
+
+hard ware, kernel, shell, application

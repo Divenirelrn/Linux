@@ -1,0 +1,3 @@
+
+使用xshell或xsftp连接服务器，需要linux开启一个sshd服务
+该服务占用22号端口

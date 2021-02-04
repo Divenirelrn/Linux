@@ -1,0 +1,16 @@
+
+cat: 查看文件内容（只能查看， 不能修改）
+    -n: 显示行号
+    *cat -n ... | more（分页显示）
+
+more 文件名
+    space: 向下翻一页
+    enter: 向下一行
+    q: 离开
+    ctrl + F: 向下一页
+    ctrl + B: 向上一页
+
+less 文件名：
+    page up: 向上翻页
+    page down: 向下翻页
+

@@ -1,0 +1,23 @@
+
+根目录： /
+bin: 常用指令（cp, date, echo, find）
+dev: 设备（cpu, disk, ...）
+media: 硬盘, U盘, ...
+etc: 配置文件
+home: 家目录
+lib: 存放静态库（*.so）
+lib64: 存放库文件
+mnt: 挂载文件夹
+opt: 安装的软件
+proc: 内核
+root: 用户文件
+sbin: 高权限用户指令
+lost+found:非法关机时保存内存数据
+selinux: 安全目录
+sys: 系统目录
+tmp: 临时文件夹
+usr: 用户应用程序
+var: 存放变量（日志文件）
+
+*内核：proc + srv + sys
+#linux一切皆文件
