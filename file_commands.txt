@@ -14,3 +14,16 @@ less 文件名：
     page up: 向上翻页
     page down: 向下翻页
 
+echo: 输出内容到控制台
+    *echo $PATH
+
+head:
+    head 文件： 默认前10
+    head -n 5 文件：读取前5行
+
+tail:
+    tail 文件:（默认后10）
+    tail -n 5 文件：读取后5行
+    tail -f 文件：实时追踪文件变化
+
+

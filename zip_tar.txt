@@ -1,0 +1,21 @@
+
+gzip 文件名：压缩文件（不会保留原文件）
+gunzip 文件名.gz: 解压缩文件
+
+zip [选项] *.zip 文件或目录
+    -r: 递归压缩
+unzip [选项] *.zip
+    -d: 解压目录
+
+tar [选项] *.tar.gz 打包的内容
+    -zcvf 压缩
+    -zxvf 解压
+tar -zxvf *.tar.gz -C /opt/tmp: 指定解压目录
+
+选项：
+    -v: 显示详细信息
+    -f:指定压缩后的文件名
+    -c:产生.tar打包文件
+    -x:解包.tar文件
+    -z:打包的同时压缩
+

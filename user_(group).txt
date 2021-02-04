@@ -28,6 +28,7 @@ linux用户至少属于一个组
     groupdel 组名：删除组
     useradd -g 用户组 用户名: 创建用户时指定组
     usermod -g 用户组 用户名: 修改组
+    usermod -d 目录名 用户名（改变该用户登录的初始目录）
 
 用户与组的相关配置文件：
     /etc/passwd: 用户配置文件

@@ -1,0 +1,14 @@
+
+find [搜索范围] [选项] 文件名
+    如：find /home -name hello.txt
+
+find /opt -user xiaojun: 按用户名查找
+
+find / -size +20M/-20M/20M/20k : 按文件大小查找
+
+
+locate:快速定位文件路径
+    locate 文件名
+
+updatedb: 创建locate数据库
+
