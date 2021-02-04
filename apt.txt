@@ -1,0 +1,11 @@
+
+apt软件包管理：
+
+/etc/apt/sources.list:指定了官方软件仓库
+
+sudo apt-get update(更新源)
+sudo apt-get install 包名
+sudo apt-get remove 包名 （--purse 包含配置文件）
+sudo apt-get show 包名：获取包的相关信息
+sudo apt-get update 包名：更新包
+sudo apt-get source 包名：下载源代码

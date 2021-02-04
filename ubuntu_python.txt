@@ -1,0 +1,10 @@
+
+Python的专业平台为Ubuntu
+
+Ubuntu的root用户设置：
+    sudo
+    sudo passwd:给root用户设置密码
+    su root:切换root用户
+
+Ubuntu对Python的支持性较好，默认安装Python2.7与Python3.5
+

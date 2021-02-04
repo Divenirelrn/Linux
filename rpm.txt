@@ -14,4 +14,4 @@ rpm -ivh 包名：安装软件包
     -v: verbose（详细信息）提示
     -h: hash进度条
 
-    
+

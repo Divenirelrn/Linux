@@ -1,0 +1,5 @@
+
+自动处理依赖关系
+
+yum list
+yum install 包名
